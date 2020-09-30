@@ -1,0 +1,136 @@
+$list-width: 800px;
+$list-height: 40px;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .row {
+    margin: 5px 0 5px 0;
+    width: 90%;
+    max-width: $list-width;
+    height: $list-height;
+    display: flex;
+    border-radius: 10px;
+
+    &.row {
+      &-head {
+        background: var(--green-theme-color);
+      }
+
+      &-item {
+        background: var(--white-theme-color);
+      }
+    }
+
+    .item {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .list {
+    .row {
+      border-radius: 0;
+      width: 100%;
+
+      &.row-head {
+        margin-top: 0;
+      }
+
+      .item {
+        &.mail {
+          display: none;
+        }
+
+        &.phone {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+//.clients-list {
+//  margin: 0 auto;
+//  display: table;
+//}
+//
+//.clients-list-item {
+//  background: var(--color-white-dark);
+//  padding-left: 20px;
+//  /*width: 875px;*/
+//  height: 50px;
+//  margin-top: 15px;
+//  margin-bottom: 15px;
+//  border-radius: 10px;
+//  line-height: 50px;
+//  display: flex;
+//}
+//
+//.clients-list-item.header {
+//  background: var(--color-green);
+//  text-align: center;
+//  margin-top: 0;
+//}
+//
+//.clients-list-item-item {
+//  float: left;
+//  margin-right: 15px;
+//  width: 100px;
+//  font-size: 18px;
+//  height: 100%;
+//}
+//
+//.clients-list-item-item.name {
+//  width: 130px;
+//  text-align: center;
+//}
+//
+//.clients-list-item-item.surname {
+//  width: 130px;
+//  text-align: center;
+//}
+//
+//.clients-list-item-item.email {
+//  width: 260px;
+//  text-align: center;
+//}
+//
+//.clients-list-item-item.phone {
+//  width: 130px;
+//  text-align: center;
+//}
+//
+//.clients-list-item-item.birthday {
+//  width: 100px;
+//  text-align: center;
+//}
+//
+//.clients-list-item-item.edit {
+//  text-align: right;
+//  width: 30px;
+//}
+//
+//.clients-list-item-item a {
+//  text-decoration: none;
+//  color: var(--color-gray);
+//  background: url("../../icon-edit.svg");
+//  display: block;
+//  width: 38px;
+//  height: 30px;
+//  margin-top: 10px;
+//}
+//
+//.clients-list-error {
+//  margin: 0 auto;
+//  font-size: 18px;
+//}

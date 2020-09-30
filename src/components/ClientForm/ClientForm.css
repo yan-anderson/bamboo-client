@@ -1,0 +1,89 @@
+.patient {
+    margin: 0 auto;
+    background: var(--color-green);
+    width: 500px;
+    display: table;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+.patient-header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.patient-item {
+    width: 500px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.patient-item input {
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.patient-item select {
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    padding-left: 10px;
+    box-sizing: content-box;
+    font-size: 15px;
+}
+
+.patient-item button {
+    width: 25%;
+    height: 30px;
+    border: 2px solid white;
+    font-size: 17px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+}
+
+.patient-item button:hover {
+    border: 2px solid var(--color-white-dark);
+    background: var(--color-white-dark);
+}
+
+.patient-error {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--color-red);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.patient-error-header {
+    font-size: 30px;
+}
+
+.patient-error-msg {
+    font-size: 17px;
+}
+
+.patient-item.delete button {
+    width: 15%;
+    height: 25px;
+    font-size: 15px;
+    background: var(--color-red);
+    border: 2px solid var(--color-red);
+}
